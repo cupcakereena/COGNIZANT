@@ -1,0 +1,202 @@
+/* ------------------------------------
+   Reset and Base Styles
+------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------
+   Body and Background Styling
+------------------------------------ */
+body {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-color: #f0f8ff; /* Fallback color */
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------------------
+   Header Styles
+------------------------------------ */
+#welcomeBanner {
+  background: linear-gradient(to right, #add8e6, #87ceeb);
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #007BFF;
+}
+
+#mainHeader {
+  color: #b22222; /* Inline override in HTML also allowed */
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------
+   Navigation Menu
+------------------------------------ */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+  background-color: #007BFF;
+  border-radius: 4px;
+}
+
+/* ------------------------------------
+   Typography
+------------------------------------ */
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3, p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Style for lead paragraph and transformations */
+.description {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+/* ------------------------------------
+   Event Cards and Layout
+------------------------------------ */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.event-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+/* ------------------------------------
+   Table Styling
+------------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ------------------------------------
+   Form Styling
+------------------------------------ */
+form {
+  margin: 20px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* CTA Button */
+#registerBtn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------------------------------
+   Video and Media
+------------------------------------ */
+#promoVideo {
+  text-align: center;
+}
+
+#eventVideo {
+  max-width: 100%;
+}
+
+/* ------------------------------------
+   Footer Styles
+------------------------------------ */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* ------------------------------------
+   Column Text Section
+------------------------------------ */
+#newsColumn {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+}
+
+/* ------------------------------------
+   Responsive Design with Media Queries
+------------------------------------ */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-image {
+    width: 90%;
+  }
+
+  input, select, textarea, button {
+    font-size: 0.9rem;
+  }
+}
+
